@@ -1,7 +1,7 @@
 ```markdown
 # mtproto-telegram-proxy
 
-> 本项目为 tproxy‑server 一键部署脚本，tproxy‑server 是 Telegram 官方8月份最新推出实验性 WEB‑Proxy（WebView 桥接 MTProxy）概念验证项目。
+> 本项目为 tproxy‑server 一键部署脚本，tproxy‑server 社区概念验证项目，实现 Telegram WEB‑Proxy，基于WebView桥接 MTProxy。
 > One-click deployment for tproxy-server — a proof-of-concept Telegram MTProxy bridged over same-origin WebView HTTPS / WebSocket.
 
 > ⚠️ **重要提示 | NOTICE**
@@ -94,6 +94,15 @@ A：修改profiles.json增加多条profile配置，支持多密钥。
 ### Q：服务重启后连接会断开吗？
 A：tproxy‑server重启会断开现存会话，客户端会自动重连。
 *A: Existing sessions will drop when tproxy-server restarts, but Telegram client will reconnect automatically.*
+
+### Q：tproxy‑server 和普通 FakeTLS mtg 区别是什么？
+A：普通FakeTLS容易被JA4指纹识别；tproxy‑server外层是标准网页HTTPS/WebSocket流量，抗DPI识别能力更强，但是仅支持Telegram自带WEB代理客户端。
+*A: Regular FakeTLS is vulnerable to JA4 fingerprint detection. tproxy‑server uses standard web‑like HTTPS/WebSocket outer transport for better anti‑DPI performance, only works with Telegram built‑in WEB‑proxy client.*
+
+### Q：为什么Bing搜不到本项目？
+A：GitHub新项目需要等待Bingbot爬虫抓取，一般需要7‑21天，可使用 `site:仓库地址` 查询是否被收录。
+*A: New GitHub repo needs time for Bingbot crawling, normally takes 7‑21 days. Use `site:repo‑url` to check index status.*
+
 
 ---
 
