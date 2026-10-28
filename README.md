@@ -1,6 +1,6 @@
 # mtproto-telegram-proxy
 
-> 一键部署 tproxy-server —— 基于 WebView 同源 HTTPS / WebSocket 桥接的 Telegram MTProxy 概念验证代理。  
+> 本项目为 tproxy‑server 一键部署脚本，tproxy‑server 是 Telegram 实验性 WEB‑Proxy（WebView 桥接 MTProxy）概念验证项目。  
 > One-click deployment for tproxy-server — a proof-of-concept Telegram MTProxy bridged over same-origin WebView HTTPS / WebSocket.
 
 > ⚠️ **重要提示 | NOTICE**
@@ -59,6 +59,6 @@
 ### 一键安装 | One-click Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tgvpno/mtproto-telegram-proxy/main/install.sh -o install.sh
+curl -fsSL https://github.com/tgvpno/mtproto-telegram-proxy/blob/main/deploy.sh -o install.sh
 chmod +x install.sh
 sudo bash install.sh
