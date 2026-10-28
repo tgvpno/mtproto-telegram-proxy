@@ -1,4 +1,3 @@
-下面是完整 `README.md` 原文，你直接**全选复制**，然后按下面方法保存成 `.md` 文件：
 ```markdown
 # mtproto-telegram-proxy
 
