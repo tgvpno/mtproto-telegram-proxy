@@ -22,18 +22,23 @@
 
 - 🛡️ **优秀抗 DPI 能力**：外层为标准同源 HTTPS / WebSocket 网页流量，在 DPI 视角下与普通网站访问无差别，
 可规避 JA4 指纹与流量特征识别
+
 *Great anti-DPI performance: outer traffic is normal same-origin HTTPS / WebSocket,
 indistinguishable from regular website visits to DPI, avoiding JA4 fingerprint detection.*
 - 🔗 **原生 MTProto 加密**：内层完整保留原版 MTProxy 的加密与帧格式，不改动 Telegram 代理协议
+
 *Native MTProto encryption: the inner layer keeps the original MTProxy encryption and
 framing without modifying the Telegram proxy protocol.*
 - 📱 **跨平台客户端支持**：支持 Telegram Desktop、Android Beta；iOS 客户端正在开发中
+
 *Cross-platform client support: works with Telegram Desktop and Android Beta; an iOS client
 is in development.*
 - 🚀 **全自动一键部署**：脚本自动完成编译、证书申请、Caddy 反向代理、systemd 开机服务与防火墙策略
+
 *Fully automatic one-click install: auto build, SSL certificate, Caddy reverse proxy, systemd
 service, and firewall rules.*
 - 🎯 **原生 TG WEB 代理链接**：支持 `t.me/webproxy` 一键导入，Telegram 可原生识别 WEB 代理类型
+
 *Native Telegram WEB proxy link: one-click import via `t.me/webproxy`; Telegram natively
 recognizes the WEB proxy type.*
 
