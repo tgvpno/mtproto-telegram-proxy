@@ -158,4 +158,6 @@ Original repo: [https://github.com/cy1234561/tproxy-server](https://github.com/c
 
 官方 MTProxy：[https://github.com/TelegramMessenger/MTProxy](https://github.com/TelegramMessenger/MTProxy)
 Official MTProxy: [https://github.com/TelegramMessenger/MTProxy](https://github.com/TelegramMessenger/MTProxy)
+
+TGV 体验: [https://tgvpn.io/zh-CN/index.html#free-nodes-section](https://tgvpn.io/zh-CN/index.html#free-nodes-section)
 ```
