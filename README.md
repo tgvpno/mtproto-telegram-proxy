@@ -1,5 +1,5 @@
-# tproxy-server-oneclick
-一键部署脚本：tproxy-server，基于 WebView 同源 HTTPS / WebSocket 桥接的 Telegram MTProxy 概念验证代理，支持 Telegram Desktop、Android Beta，iOS 客户端尚在规划中。
+# mtproto-telegram-proxy
+一键部署脚本：tproxy-server，基于 WebView 同源 HTTPS/WebSocket 桥接的 Telegram MTProxy 概念验证代理，支持 Telegram Desktop、Android Beta，iOS 客户端尚在规划中。
 > One-click deployment script for tproxy-server. A proof-of-concept Telegram MTProxy proxy bridged via WebView same-origin HTTPS/WebSocket. Supported on Telegram Desktop and Android Beta. iOS client is planned.
 
 > ⚠️ 重要提示 | NOTICE
@@ -9,6 +9,18 @@
 > - Client requirement: Telegram Desktop ≥7.1.0, Android Beta; No iOS client available yet
 > - 本项目属于 POC 概念验证实现，稳定性有限，请勿作为唯一代理线路
 > - This is a POC experimental project with limited stability. Do not use it as your only proxy.
+
+## ✨ 项目亮点 | Features
+- 🛡️ **优秀抗DPI能力**：外层是标准同源 HTTPS / WebSocket 网页流量，在DPI视角下和普通网站访问无差别，规避JA4指纹与流量特征识别
+  Great anti-DPI performance: Outer traffic is normal same-origin HTTPS/WebSocket, indistinguishable from regular website visits to DPI, avoids JA4 fingerprint detection
+- 🔗 **原生MTProto加密**：内层完整保留原版 MTProxy 的加密与帧格式，不改动 Telegram 代理协议
+  Native MTProto encryption: Inner traffic keeps original MTProxy encryption and framing, no modification to Telegram proxy protocol
+- 📱 **跨平台客户端支持**：支持 Telegram Desktop、Android Beta，iOS 客户端方案正在开发规划
+  Cross-platform client: Works with Telegram Desktop, Android Beta; iOS implementation in roadmap
+- 🚀 **全自动一键部署**：脚本自动编译、配置证书、Caddy反向代理、Systemd开机服务、防火墙策略
+  Fully automatic one-click install: Auto compile, SSL certificate, Caddy reverse proxy, systemd service and firewall rules
+- 🎯 原生 TG WEB 代理链接：支持 `t.me/webproxy` 一键导入，Telegram 原生识别 WEB 代理类型
+  Native Telegram WEB proxy link: Support one-click import via `t.me/webproxy` link
 
 ## 原理简介 | Introduction
 传统 FakeTLS MTProxy 容易被 JA4 指纹、流量时序特征识别。
@@ -29,6 +41,6 @@ With tproxy-server: Telegram client sends MTProto traffic through its built-in W
 
 ## 🚀 一键安装 | One-click Install
 ```bash
-curl -fsSL https://raw.githubusercontent.com/你的用户名/tproxy-server-oneclick/main/install.sh -o install.sh
+curl -fsSL https://raw.githubusercontent.com/tgvpno/mtproto-telegram-proxy/main/install.sh -o install.sh
 chmod +x install.sh
 sudo bash install.sh
