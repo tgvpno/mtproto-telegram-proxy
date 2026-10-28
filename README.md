@@ -1,6 +1,6 @@
 # mtproto-telegram-proxy
 
-> 本项目为 tproxy‑server 一键部署脚本，tproxy‑server 是 Telegram 实验性 WEB‑Proxy（WebView 桥接 MTProxy）概念验证项目。  
+> 本项目为 tproxy‑server 一键部署脚本，tproxy‑server 是 Telegram 官方8月份最新推出 实验性 WEB‑Proxy（WebView 桥接 MTProxy）概念验证项目。  
 > One-click deployment for tproxy-server — a proof-of-concept Telegram MTProxy bridged over same-origin WebView HTTPS / WebSocket.
 
 > ⚠️ **重要提示 | NOTICE**
