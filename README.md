@@ -72,7 +72,8 @@ and forwards them to a standard backend MTProxy.*
 ## 🚀 快速开始 | Quick Start
 
 ### 一键安装 | One-click Install
-```bash
+```
+bash
 curl -fsSL https://raw.githubusercontent.com/tgvpno/mtproto-telegram-proxy/main/deploy.sh -o install.sh
 chmod +x install.sh
 sudo bash install.sh
